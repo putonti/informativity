@@ -414,7 +414,6 @@ int main(int argc, char* argv[])
             return 0;
     }  //make s database
 
-    blast("blastx",path,"NC_011810.fna","gDB","xBg.blastx");
     if(!blast("blastx",path,argv[1],"gDB","xBg.blastx")) return 0;  //blast x against g
     if(!blast("blastx",path,argv[1],"zDB","xBz.blastx")) return 0;  //blast x against z
     if(argc==6) {if(!blast("blastx",path,argv[1],"sDB","xBs.blastx")) return 0;}    //blast x against s
